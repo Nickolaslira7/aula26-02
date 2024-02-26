@@ -30,8 +30,39 @@ export default function App() {
             // headerShown: false,
           }}
         />
-        <Stack.Screen name="Profile" component={Profile} />
-        <Stack.Screen name="Contact" component={Contact} />
+        <Stack.Screen
+          name="Profile"
+          component={Profile}
+          options={{
+            title: "TELA PROFILE",
+            headerStyle: {
+              backgroundColor: "#f4511e",
+            },
+            headerTintColor: "#fff",
+            headerTitleStyle: {
+              fontWeight: "bold",
+            },
+            headerTitleAlign: "center",
+            // headerShown: false,
+          }}
+        />
+
+        <Stack.Screen
+          name="Contact"
+          component={Contact}
+          options={{
+            title: "TELA CONTACT",
+            headerStyle: {
+              backgroundColor: "#f4511e",
+            },
+            headerTintColor: "#fff",
+            headerTitleStyle: {
+              fontWeight: "bold",
+            },
+            headerTitleAlign: "center",
+            // headerShown: false,
+          }}
+        />
       </Stack.Navigator>
       <StatusBar style="auto" />
     </NavigationContainer>
